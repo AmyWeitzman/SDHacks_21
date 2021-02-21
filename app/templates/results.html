@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body %}
+  <div class="container">
+    <h1 class="site-title">My Carbon Footprint</h1>
+    <p id="carbon-footprint" class="subheading res-text">Your carbon footprint is <b>{{ carbonFootprint }} kg</b></p>
+    <p class="res-text-sm" id="action-list-header">Here are some environmentally-friendly suggestions to help offset your carbon footprint:</p>
+    <div id="actions-list">
+        {% for i in range(0, len) %} 
+          <li class="res-text-sm">
+            Save <span class="action-text">{{ actions[i].kgsaveperyear }} kg</span> per year by <span class="action-text">{{ actions[i].name }}</span>.
+          </li>
+        {% endfor %}
+      </ul>    
+    </div>
+  </div>
+{% endblock %}

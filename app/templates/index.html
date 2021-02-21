@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+  <div class="container">
+    <h1 class="site-title">My Carbon Footprint</h1>
+    <h3 class="subheading">Calculate your carbon footprint and learn about ways to reduce it</h3>
+    <div>
+      <form action="/calculate" method="post">
+        <div class="mb-3 row input-section">
+          <label for="trans" class="form-label col-sm-5">Mode of transportation: </label>
+          <select name="transports-dropdown" class="input-field selectpicker form-control">
+            {% for i in range(0, len) %} 
+            <option value="{{ transports[i].code }}">{{ transports[i].name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="mb-3 row input-section">
+          <label for="distance" class="form-label col-sm-5">Distance travelled per year (mi): </label>
+          <div class="col-sm-2 no-padding">
+            <input type="number" class="input-field form-control" id="distance" name="distance" min="0" />
+          </div>
+        </div>
+        <div id="btn-container">
+          <button id="calc-btn" class="btn btn-secondary" type="submit">Calculate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,91 @@
+html {
+  background-image: url("./nature_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.container {
+  width: 70vw;
+  background-color: rgba(255, 255, 255, 0.80);
+  border-radius: 20px;
+  margin-top: 10%;
+  padding: 35px;
+}
+
+.site-title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subheading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.form-label {
+  font-size: 2.5rem;
+}
+
+.selectpicker {
+  width: 25%;
+  padding: 0px;
+}
+
+.input-field {
+  font-size: 2rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.input-section {
+  margin: 20px 0px;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+#calc-btn {
+  background-color: rgba(99, 218, 99, 0.80);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#calc-btn:hover {
+  box-shadow: 1px 1px 3px black;
+}
+
+.res-text {
+  font-size: 3rem;
+}
+
+.res-text-sm {
+  font-size: 2rem;
+}
+
+#carbon-footprint {
+  margin-top: 50px;
+}
+
+#action-list-header {
+  text-align: center;
+}
+
+#actions-list {
+  margin-left: 20%;
+}
+
+.action-text {
+  color:rgb(1, 161, 1);
+  font-weight: bold;
+}
